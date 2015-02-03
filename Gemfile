@@ -8,6 +8,7 @@ gem 'guard-livereload'
 gem 'bootstrap-sass'
 gem 'capistrano'
 gem 'capistrano-rails'
+gem 'capistrano-rvm'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
