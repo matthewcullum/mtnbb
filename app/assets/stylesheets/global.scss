@@ -1,0 +1,91 @@
+$brand-primary: #2980b9;
+$footer-height: 100px;
+$dottedBg: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXxvZSoAAAAAElFTkSuQmCC';
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  margin-bottom: -$footer-height;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+#footer, .page-wrap:after {
+  height: $footer-height;
+}
+
+body {
+  background: url("home_bg.jpg") no-repeat;
+  background-position-y: -500px;
+  background-size: cover;
+}
+
+.navbar {
+  border-radius: 0;
+
+  &.navbar-default {
+    background: white;
+    .btn {
+      color: white;
+      border-radius: 0;
+      &.btn-primary {
+        &:hover {
+          background: darken($brand-primary, 5%);
+          color: darken(white, 5%);
+        }
+      }
+    }
+  }
+
+  #mainNav {
+    @media (min-width: 960px) {
+      position: absolute;
+      bottom: 20px;
+      right: 200px;
+    }
+    padding-left: 150px;
+    li {
+      a {
+        font-size: 1.5em;
+      }
+    }
+  }
+
+  &#footer {
+    margin-bottom: 0;
+    .navbar-nav {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+      li {
+        float: none;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+
+  .navbar-brand {
+    width: 70%;
+    height: 50%;
+  }
+}
+
+.well, .panel {
+  opacity: 0.9;
+}
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "plans_pricing";
+@import "home";
+
+
+
+
