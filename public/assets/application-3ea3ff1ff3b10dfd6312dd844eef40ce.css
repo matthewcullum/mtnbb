@@ -1,90 +1,90 @@
 @charset "UTF-8";
-/* line 5, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 5, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 html, body {
   height: 100%;
 }
 
-/* line 9, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 9, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .page-wrap {
   min-height: 100%;
   margin-bottom: -100px;
 }
 
-/* line 14, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 14, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .page-wrap:after {
   content: "";
   display: block;
 }
 
-/* line 19, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 19, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 #footer, .page-wrap:after {
   height: 100px;
 }
 
-/* line 23, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 23, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 body {
   background: url("/assets/home_bg-146136bc40b4a9c1fd8b0eef293b2ead.jpg");
   background-position-y: -500px;
   background-size: cover;
 }
 
-/* line 29, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 29, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar {
   border-radius: 0;
 }
-/* line 32, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 32, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar.navbar-default {
   background: white;
 }
-/* line 34, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 34, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar.navbar-default .btn {
   color: white;
   border-radius: 0;
 }
-/* line 38, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 38, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar.navbar-default .btn.btn-primary:hover {
   background: #2472a4;
   color: #f2f2f2;
 }
-/* line 46, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 46, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar #mainNav {
   padding-left: 150px;
 }
 @media (min-width: 960px) {
-  /* line 46, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+  /* line 46, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
   .navbar #mainNav {
     position: absolute;
     bottom: 20px;
     right: 200px;
   }
 }
-/* line 54, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 54, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar #mainNav li a {
   font-size: 1.5em;
 }
-/* line 60, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 60, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar#footer {
   margin-bottom: 0;
 }
-/* line 62, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 62, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar#footer .navbar-nav {
   float: none;
   margin: 0 auto;
   text-align: center;
 }
-/* line 66, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 66, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar#footer .navbar-nav li {
   float: none;
   display: inline-block;
   text-align: center;
 }
-/* line 74, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 74, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .navbar .navbar-brand {
   width: 70%;
   height: 50%;
 }
 
-/* line 80, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss */
+/* line 80, /home/matthew/Projects/mtnbb/app/assets/stylesheets/global.scss.erb */
 .well, .panel {
   opacity: 0.9;
 }
