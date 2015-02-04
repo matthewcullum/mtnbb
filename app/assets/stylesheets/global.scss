@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-  background: url("home_bg.jpg") no-repeat;
+  background: url(image_path("home_bg.jpg")) no-repeat;
   background-position-y: -500px;
   background-size: cover;
 }
