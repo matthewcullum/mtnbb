@@ -21,7 +21,7 @@ html, body {
 }
 
 body {
-  background: asset-url("home_bg.jpg");
+  background: url(asset-path("home_bg.jpg"));
   background-position-y: -500px;
   background-size: cover;
 }
