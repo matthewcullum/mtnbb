@@ -1,6 +1,5 @@
 GEM
   remote: https://rubygems.org/
-  remote: https://rails-assets.org/
   specs:
     actionmailer (4.2.0)
       actionpack (= 4.2.0)
@@ -231,7 +230,6 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   byebug
-  capistrano
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.1.0)
