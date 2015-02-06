@@ -4,6 +4,7 @@ gem 'passenger'
 gem 'guard-livereload'
 gem 'bootstrap-sass'
 gem 'capistrano-rvm'
+gem 'google-api-client'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'

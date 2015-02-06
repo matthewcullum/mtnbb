@@ -1,7 +1,3 @@
-$brand-primary: #2980b9;
-$footer-height: 100px;
-$dottedBg: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAG0lEQVQIW2NkYGD4z8DAwMgABXAGNgGwSgwVAFbmAgXxvZSoAAAAAElFTkSuQmCC';
-
 html, body {
   height: 100%;
 }
@@ -21,16 +17,19 @@ html, body {
 }
 
 body {
-  background: url(asset-path("bg.jpg"));
-
-  background-size: cover;
+  background-color: $bg !important;
+  //background: url(asset-path("bg.jpg")) no-repeat;
+  //background-size: cover;
 }
 
 .navbar {
   border-radius: 0;
+  margin-bottom: 50px;
 
   &.navbar-default {
-    background: white;
+  background: $header-bg;
+    border: 0;
+    border-radius: 0;
     .btn {
       color: white;
       border-radius: 0;
@@ -58,7 +57,14 @@ body {
   }
 
   &#footer {
+    color: #fff;
+    border-radius: 0;
     margin-bottom: 0;
+    margin-top: 50px;
+    padding: 10px 0 0 0;
+    border: 0;
+    border-top: lighten($footer-bg, 5%) medium solid;
+    background: url($dottedBg);
     .navbar-nav {
       float: none;
       margin: 0 auto;
@@ -77,14 +83,37 @@ body {
   }
 }
 
-.well, .panel {
-  opacity: 0.9;
+.footer-container{
+  background: $footer-bg;
 }
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
-@import "plans_pricing";
-@import "home";
+.box{
+  margin: 5px;
+  padding: 5px;
+  background: #fff;
+  height: 250px;
+  border-radius: 3px;
+  &:first-child{
+    margin-left: 0;
+  }
+  &:last-child{
+    margin-right: 0;
+  }
+  border: wave thin $brand-greyBlue;
+  text-align: center;
+  ul{
+    list-style: none;
+    padding-left: 0;
+  }
+}
+#content{
+  background: $bg;
+}
+
+.well, .panel, .box, .jumbotron {
+  background: #fff !important;
+}
+
 
 
 

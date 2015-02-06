@@ -1,7 +1,9 @@
 // Place all the styles related to the PlansPricing controller here.
-// They will automatically be included in application.css.
+// They will automatically be included in application.css.scss.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .plan-container {
+  border: $brand-lightBlue thin solid;
   background: #333;
   width: 85%;
   text-align: center;
@@ -19,10 +21,10 @@
   .body {
     h1{
       margin-bottom: 20px;
-      color: $brand-info;
+      color: $brand-lightBlue;
     }
     margin: 0;
-    background: white;
+    background: $brand-offWhite;
     color: #111;
     ul{
       padding: 0;
