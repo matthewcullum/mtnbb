@@ -1,10 +1,17 @@
 source 'https://rubygems.org'
+source 'https://rubygems.org'
+
+
+gem 'jquery-ui-rails'
 
 gem 'passenger'
 gem 'guard-livereload'
 gem 'bootstrap-sass'
 gem 'capistrano-rvm'
 gem 'google-api-client'
+gem 'jquery-ui-themes'
+gem 'redcarpet'
+gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'

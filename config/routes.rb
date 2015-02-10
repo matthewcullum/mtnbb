@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  get 'contact/index'
+
   root 'home#home'
 
   get 'plans-and-pricing', to: 'plans_pricing#index'
+  get 'faqs', to: 'faq#index'
+  get 'contact', to: 'contact#index'
+	post 'contact', to: 'contact#send_message'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

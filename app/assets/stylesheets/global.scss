@@ -27,7 +27,7 @@ body {
   margin-bottom: 50px;
 
   &.navbar-default {
-  background: $header-bg;
+    background: $header-bg;
     border: 0;
     border-radius: 0;
     .btn {
@@ -83,35 +83,54 @@ body {
   }
 }
 
-.footer-container{
+.footer-container {
   background: $footer-bg;
 }
 
-.box{
+.box {
   margin: 5px;
   padding: 5px;
-  background: #fff;
+  background: whitesmoke !important;
+  color: $brand-darkBlue;
   height: 250px;
   border-radius: 3px;
-  &:first-child{
+  &:first-child {
     margin-left: 0;
   }
-  &:last-child{
+  &:last-child {
     margin-right: 0;
   }
+  h1, h2, h3 {
+    color: $brand-medBlue;
+    small {
+    color: lighten($brand-medBlue, 5%);
+    }
+  }
+  a{
+    color: $brand-lightBlue;
+  }
+  font-size: 15px;
   border: wave thin $brand-greyBlue;
   text-align: center;
-  ul{
+  ul {
     list-style: none;
     padding-left: 0;
   }
 }
-#content{
+
+#content {
   background: $bg;
 }
 
 .well, .panel, .box, .jumbotron {
-  background: #fff !important;
+  background: #fff;
+}
+
+.ui-accordion-header.ui-accordion-header-active{
+  outline: 0;
+}
+.ui-accordion-header{
+  margin-top: 20px !important;
 }
 
 

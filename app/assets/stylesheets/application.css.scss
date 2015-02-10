@@ -10,11 +10,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require jquery-ui
  *= require_self
  */
 
 @import "bootstrap-sprockets.scss";
 @import "bootstrap.scss";
+@import "jquery-ui/flick";
+@import "rails_bootstrap_forms";
 @import "custom_variables";
 @import "home";
 @import "plans_pricing";

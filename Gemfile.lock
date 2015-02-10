@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/bootstrap-ruby/rails-bootstrap-forms.git
+  revision: 492380881365341e7e3a794f843a00ebb76667f6
+  specs:
+    bootstrap_form (2.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -124,6 +130,9 @@ GEM
     hike (1.2.3)
     hitimes (1.2.2)
     http_parser.rb (0.6.0)
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.2.6)
       activesupport (>= 3.0.0, < 5)
@@ -132,6 +141,10 @@ GEM
       rails-dom-testing (~> 1.0)
       railties (>= 4.2.0)
       thor (>= 0.14, < 2.0)
+    jquery-ui-rails (5.0.3)
+      railties (>= 3.2.16)
+    jquery-ui-themes (0.0.11)
+      httparty
     json (1.8.2)
     jwt (1.2.1)
     launchy (2.4.3)
@@ -150,6 +163,7 @@ GEM
     mini_portile (0.6.2)
     minitest (5.5.1)
     multi_json (1.10.1)
+    multi_xml (0.5.5)
     multipart-post (2.0.0)
     nenv (0.2.0)
     net-scp (1.2.1)
@@ -202,6 +216,7 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.2.0)
       json (~> 1.4)
+    redcarpet (3.2.2)
     retriable (1.4.1)
     sass (3.4.10)
     sass-rails (5.0.1)
@@ -258,6 +273,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-sass
+  bootstrap_form!
   byebug
   capistrano-rails
   capistrano-rvm
@@ -266,9 +282,12 @@ DEPENDENCIES
   guard-livereload
   jbuilder (~> 2.0)
   jquery-rails
+  jquery-ui-rails
+  jquery-ui-themes
   passenger
   pg
   rails (= 4.2.0)
+  redcarpet
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring
