@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'admin@www2.mtnbb.com'
+  default from: 'creativelyconcise@gmail.com'
   layout 'mailer'
 end
