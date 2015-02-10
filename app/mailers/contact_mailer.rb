@@ -2,6 +2,6 @@ class ContactMailer < ApplicationMailer
 
 	def contact_email(message)
 		@message = message
-		mail(to: 'creativelyconcise@gmail.com', subject: 'Test')
+		mail(to: 'sales@mtnbb.com', subject: 'Contact request')
 	end
 end
