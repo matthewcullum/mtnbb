@@ -91,6 +91,9 @@ GEM
     daemon_controller (1.2.0)
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
+    dotenv (1.0.2)
+    dotenv-rails (1.0.2)
+      dotenv (= 1.0.2)
     em-websocket (0.5.1)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
@@ -278,6 +281,7 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rvm
   coffee-rails (~> 4.1.0)
+  dotenv-rails
   google-api-client
   guard-livereload
   jbuilder (~> 2.0)

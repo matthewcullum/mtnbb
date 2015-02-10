@@ -12,6 +12,7 @@ gem 'google-api-client'
 gem 'jquery-ui-themes'
 gem 'redcarpet'
 gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
+gem 'dotenv-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
