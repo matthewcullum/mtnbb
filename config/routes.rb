@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   get 'plans-and-pricing', to: 'plans_pricing#index'
   get 'faqs', to: 'faq#index'
   get 'contact', to: 'contact#index'
+  get 'sign-up', to: 'sign_up#index'
+  #get 'admin', to: 'admin#index'
 	post 'contact', to: 'contact#send_message'
 
   # The priority is based upon order of creation: first created -> highest priority.

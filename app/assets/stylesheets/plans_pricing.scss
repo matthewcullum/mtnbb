@@ -10,26 +10,28 @@
   * {
     margin: 0;
   }
-  margin: 0 auto;
+  margin: 50px auto;
 
   .title {
     background-image: url($dottedBg);
     * {
       color: white
-    };
+    }
+  ;
   }
   .body {
-    h1{
+    h1 {
       margin-bottom: 20px;
-      color: $brand-lightBlue;
+      color: $brand-darkBlue;
     }
     margin: 0;
-    background: $brand-offWhite;
-    color: #111;
-    ul{
-      padding: 0;
+    padding: auto 5px;
+    background: $whitesmoke;
+    color: $brand-medBlue;
+    ul {
+      padding: 5px;
       list-style-type: none;
-      li{
+      li {
         line-height: 1.5em;
         padding: 2px 0;
       }
