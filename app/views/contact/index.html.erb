@@ -1,28 +1,88 @@
 <div class="container">
-  <div class="col-md-4 col-md-offset-1">
-    <h2>Phone Number: <br/>
-      <small>303-642-3858</small>
+  <div class="col-md-5 col-md-offset-1 panel panel-info">
+    <h2>Phone <br/>
+      <small>
+        <table class="table table-responsive">
+          <tr>
+            <td>
+              303-642-3858
+            </td>
+          </tr>
+        </table></small>
     </h2>
-    <h2>Office Hours: <br/>
-      <small>Mon-Fri, 8:30am-5pm <br/> Saturday, 8:30am-12pm</small>
+    <h2>Office Hours <br/>
+
+      <small>
+        <table class="table table-condensed">
+          <tr>
+            <td>
+              Mon - Fri
+            </td>
+            <td>
+              8:30AM - 5PM
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Saturday
+            </td>
+            <td>
+              8:30AM - 12PM
+            </td>
+          </tr>
+        </table>
+      </small>
     </h2>
+    <h2>Emails<br/>
+      <small>
+        <table class="table table-condensed">
+          <tr>
+            <td>
+              Billing
+            </td>
+            <td> <%= mail_to 'billing@mtnbb.com' %></td>
+          </tr>
+
+          <tr>
+            <td>
+              General support
+            </td>
+            <td> <%= mail_to 'support@mtnbb.com' %></td>
+          </tr>
+
+          <tr>
+            <td>
+              Technical support
+            </td>
+            <td><%= mail_to 'benjamin@mtnbb.com' %></td>
+          </tr>
+          <tr>
+            <td>
+              Company Owner
+            </td>
+            <td> <%= mail_to 'andy@mtnbb.com' %></td>
+          </tr>
+        </table>
+      </small>
+    </h2>
+
   </div>
-  <div class="col-md-6">
+  <div class="col-md-4 col-md-offset-1 panel panel-primary well">
     <%= bootstrap_form_tag url: '/contact' do |f| %>
         <div class="col-md-12">
-        <h1>Contact Form</h1>
+          <h1>Contact Form</h1>
         </div>
         <div class="col-md-6">
-        <%= f.text_field :first_name, placeholder:'First Name', layout: :inline %>
+          <%= f.text_field :first_name, placeholder: 'First Name', layout: :inline %>
         </div>
         <div class="col-md-6">
-        <%= f.text_field :first_name, placeholder:'Last Name', layout: :inline %>
+          <%= f.text_field :first_name, placeholder: 'Last Name', layout: :inline %>
         </div>
         <div class="col-md-12">
-        <%= f.text_field :email, placeholder:'john_doe@gmail.com' %>
+          <%= f.text_field :email, placeholder: 'john_doe@gmail.com' %>
         </div>
         <div class="col-md-12">
-          <%= f.text_field :phone_number, placeholder:'123-456-7890' %>
+          <%= f.text_field :phone_number, placeholder: '123-456-7890' %>
         </div>
         <div class="col-md-12">
           <%= f.text_area :message %>
@@ -30,6 +90,6 @@
         <div class="col-md-12">
           <%= f.submit :Send %>
         </div>
-  <% end %>
+    <% end %>
   </div>
 </div>
