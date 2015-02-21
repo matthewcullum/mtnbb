@@ -5,14 +5,14 @@ source 'https://rubygems.org'
 gem 'jquery-ui-rails'
 
 gem 'passenger'
-gem 'guard-livereload'
 gem 'bootstrap-sass'
-gem 'capistrano-rvm'
 gem 'google-api-client'
 gem 'jquery-ui-themes'
 gem 'redcarpet'
 gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
 gem 'dotenv-rails'
+gem 'devise'
+gem 'haml-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
@@ -54,5 +54,10 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+	gem 'rspec-rails'
+	gem 'capybara'
+  gem 'guard-livereload'
+	gem 'factory_girl_rails'
+	gem 'faker'
 end
 

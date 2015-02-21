@@ -1,0 +1,6 @@
+.container
+  .accordion
+    - @faqs.each do |faq|
+      %h1= faq.title
+      %div
+        %h3= @markdown.render(faq.description).html_safe

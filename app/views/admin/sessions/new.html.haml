@@ -1,0 +1,14 @@
+.col-md-4.col-md-offset-4.panel.panel-primary
+  %h2 Log in
+  = bootstrap_form_tag(url: session_path(resource_name)) do |f|
+    %p.text-danger
+      = flash.alert
+    = f.email_field :email, autofocus: true, name: 'admin[email]'
+    = f.password_field :password, autocomplete: "off", name: 'admin[password]'
+    - if devise_mapping.rememberable?
+      .field
+        = f.check_box :remember_me
+    %br
+    .actions
+      = f.submit "Log in"
+  = render "admin/shared/links"

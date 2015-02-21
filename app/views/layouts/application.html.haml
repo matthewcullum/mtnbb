@@ -1,0 +1,46 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Mountain BroadBand - High-speed internet for rural Colorado
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  %body{:id => body_tag}
+    .page-wrap
+      .navbar.navbar-default
+        .container-fluid
+          .navbar-header
+            %a{:href => "/"}= image_tag 'mtnbb_logo.png', class: 'navbar-brand'
+          %ul#topNav.nav.navbar-nav.navbar-right
+            -if admin_signed_in?
+              %li= link_to 'Admin Logout', destroy_admin_session_path, method: :delete
+            %li
+              %a.btn.btn-primary{:href => "https://billing.mtnbb.com/clientarea.php"}
+                Billing login
+                %span.glyphicon.glyphicon-log-in
+          %ul#mainNav.nav.navbar-nav
+            %li= link_to 'Sign up', 'sign-up'
+            %li= link_to 'Plans and Pricing', 'plans-and-pricing'
+            %li= link_to 'FAQ', 'faqs'
+            %li
+              %a{:href => ""} News
+            %li= link_to 'Contact Us', 'contact'
+      #content.container-fluid
+        = yield
+    .footer-container
+      #footer.navbar.navbar-inverse
+        .container-fluid
+          .col-lg-12.text-left
+            %ul.nav
+              %li © 2015 Mountain Broadband, LLC
+            %h3 303-642-3858
+          .col-md-12
+            %ul.nav.navbar-nav
+              %li
+                %a{:href => ""} Legal
+              %li
+                %a{:href => ""} Privacy Policy
+              %li
+                %a{:href => "mailto:creativelyconcise@gmail.com"} Creatively Concise Web Design
