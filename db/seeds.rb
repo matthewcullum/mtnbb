@@ -17,3 +17,6 @@ seeds = Faq.create [
 
 		                   {title:       'How is our connection to the internet accomplished?',
 		                    description: 'We are using a high bandwidth microwave link to a fiber optic connection as our backbone.'}, {title: 'Is our equipment affected by weather?', description: 'It possibly could be degraded by about 8% in an extremely heavy rainstorm. However, with the speed of our links, it would not be noticeable. Also, we do not live in an area that gets the amount of rain that would cause this type of degradation..'}]
+articles = 5.times do
+	Article.create title: Faker::Company.bs, body: Faker::Lorem.paragraph
+end

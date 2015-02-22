@@ -8,6 +8,6 @@
   %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
   %body{:id => body_tag}
     .page-wrap.container
-      .col-md-3.col-md-offset-2= render 'partials/admin/dashboard_side_nav.html.haml'
-      .col-nd-6
+      .col-md-2= render 'partials/admin/dashboard_side_nav.html.haml'
+      .col-nd-10
         =yield

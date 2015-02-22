@@ -28,8 +28,7 @@
             %li= link_to 'Sign up', 'sign-up'
             %li= link_to 'Plans and Pricing', 'plans-and-pricing'
             %li= link_to 'FAQ', 'faqs'
-            %li
-              %a{:href => ""} News
+            %li= link_to 'News', articles_path
             %li= link_to 'Contact Us', 'contact'
       #content.container-fluid
         = yield

@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+	authenticate :admin do
+		resources :articles, only: [:new, :create, :edit, :update, :destroy]
+	end
+
+	resources :articles, only: [:index, :show]
+
 	devise_for :admin
 
 	namespace :admin do

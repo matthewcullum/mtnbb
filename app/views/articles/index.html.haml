@@ -1,0 +1,9 @@
+.container
+  .col-md-8.col-md-offset-2
+    -if @articles.empty?
+      %h1
+        There's nothing here yet...
+    -else
+      -@articles.each do |article|
+        %h3= link_to article.title.capitalize, article_path(article.id)
+        %p= truncate article.body, length: 100
