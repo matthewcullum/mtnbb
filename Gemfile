@@ -13,7 +13,6 @@ gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
 gem 'dotenv-rails'
 gem 'devise'
 gem 'haml-rails'
-gem 'bootsy'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
