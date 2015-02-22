@@ -1,0 +1,13 @@
+!!!
+%head
+  %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+  %title Mountain BroadBand - High-speed internet for rural Colorado
+  = stylesheet_link_tag 'admin', media: 'all', 'data-turbolinks-track' => true
+  = javascript_include_tag 'application', 'data-turbolinks-track' => true
+  = csrf_meta_tags
+  %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+  %body{:id => body_tag}
+    .page-wrap.container
+      .col-md-3.col-md-offset-2= render 'partials/admin/dashboard_side_nav.html.haml'
+      .col-nd-6
+        =yield

@@ -9,17 +9,21 @@
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
   %body{:id => body_tag}
     .page-wrap
+      -if admin_signed_in?
+        .text-center
+          %span= link_to 'Admin Dashboard', admin_path
+          %span
+            |
+          %span= link_to 'Logout', destroy_admin_session_path, method: :delete
+          %hr
       .navbar.navbar-default
         .container-fluid
           .navbar-header
             %a{:href => "/"}= image_tag 'mtnbb_logo.png', class: 'navbar-brand'
           %ul#topNav.nav.navbar-nav.navbar-right
-            -if admin_signed_in?
-              %li= link_to 'Admin Logout', destroy_admin_session_path, method: :delete
-            %li
-              %a.btn.btn-primary{:href => "https://billing.mtnbb.com/clientarea.php"}
-                Billing login
-                %span.glyphicon.glyphicon-log-in
+            %a.btn.btn-primary{:href => "https://billing.mtnbb.com/clientarea.php"}
+              Billing login
+              %span.glyphicon.glyphicon-log-in
           %ul#mainNav.nav.navbar-nav
             %li= link_to 'Sign up', 'sign-up'
             %li= link_to 'Plans and Pricing', 'plans-and-pricing'

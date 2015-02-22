@@ -1,0 +1,12 @@
+.side-nav
+  %h2
+    Settings
+  %h3= link_to 'Blog', ''
+  %h3= link_to 'Plans and Pricing', ''
+  %h3= link_to 'FAQs', ''
+  %hr
+  %h2
+    Links
+  %h3= link_to 'View Site', '/'
+  %h3= link_to 'Logout', destroy_admin_session_path, method: :delete
+
