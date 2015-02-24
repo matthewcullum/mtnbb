@@ -1,0 +1,17 @@
+.side-nav
+  %h2
+    Articles
+    %small
+      %br
+      = link_to 'New', new_article_path
+      %br
+      = link_to 'View all', articles_path
+
+  %h2= link_to 'Plans and Pricing', ''
+  %h2= link_to 'FAQs', ''
+  %hr
+  %h2
+    Links
+  %h3= link_to 'View Site', '/'
+  %h3= link_to 'Logout', destroy_admin_session_path, method: :delete
+
