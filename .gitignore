@@ -9,9 +9,9 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
-!/log/.keep
 /tmp
+
+# ignore ide settings
 .idea
 
-config/database.yml
 .env
