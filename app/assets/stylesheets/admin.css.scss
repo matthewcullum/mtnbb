@@ -3,3 +3,12 @@
 @import "jquery-ui/flick";
 @import "rails_bootstrap_forms";
 @import "admin/dashboard";
+@import "bootstrap-wysihtml5/bootstrap3-wysihtml5";
+
+form{
+ @extend  .form-horizontal;
+}
+
+.wysihtml5-sandbox{
+  height: 400px !important;
+}
