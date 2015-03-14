@@ -1,1 +1,1 @@
-web: bundle exec passenger start -p 5000
+web: bundle exec unicorn_rails -p 5000 -E production

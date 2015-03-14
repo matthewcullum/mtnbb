@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.2.0'
 
-
+gem 'rails_12factor'
 #server
-gem 'passenger'
+gem 'unicorn'
 
 #ui related
 gem 'jquery-ui-rails'
