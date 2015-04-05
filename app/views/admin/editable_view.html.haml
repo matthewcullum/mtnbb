@@ -1,0 +1,16 @@
+-if @items.first
+  %table.table.table-responsive
+    %tr
+      -@items.first.attributes.except("id", "created_at", "updated_at").each do |name, value|
+        %td=name
+
+    -@items.each do |editable_item|
+      %tr
+        -attributes = editable_item.attributes
+
+        -attributes.except("id", "created_at", "updated_at").each do |name, value|
+          %td=value
+        %td=link_to 'edit', edit_faq_path(editable_item.id)
+        %td=link_to 'delete', faq_path(editable_item.id), method: :delete
+-else
+  There doesn't appear to be anything here yet

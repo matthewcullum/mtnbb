@@ -1,10 +1,6 @@
 =bootstrap_form_for @article do |f|
+  =f.check_box :published
   =f.text_field :title
   =f.text_area :body, class: 'markup', id: 'body-textarea', hide_label: true, resizable: true
 
-  -if @article.published
-    =f.submit 'Update', name: :save, class: 'btn btn-primary'
-    =f.submit 'Unpublish', name: :unpublish, class: 'btn btn-danger'
-  -else
-    =f.submit 'Save', name: :save, class: 'btn btn-primary'
-    =f.submit 'Publish', name: :publish, class: 'btn btn-success'
+  =f.submit 'Save', name: :save, class: 'btn btn-primary'

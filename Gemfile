@@ -1,5 +1,6 @@
+ruby '2.2.1'
 source 'https://rubygems.org'
-ruby '2.2.0'
+
 
 gem 'rails_12factor'
 #server
@@ -16,6 +17,7 @@ gem 'will_paginate'
 #markdown
 gem 'redcarpet'
 gem 'reverse_markdown'
+gem 'nokogiri'
 
 #environment
 gem 'dotenv-rails'
@@ -55,7 +57,7 @@ gem 'faker'
 group :development, :test do
 	# Call 'byebug' anywhere in the code to stop execution and get a debugger console
 	gem 'byebug'
-
+	gem 'foreman'
 	# Access an IRB console on exception pages or by using <%= console %> in views
 	gem 'web-console', '~> 2.0'
 

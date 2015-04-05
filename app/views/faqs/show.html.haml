@@ -1,0 +1,17 @@
+.col-md-10.col-md-offset-1
+  %h1
+    %hr
+    %h2.text-muted
+      Title
+    -unless @faq.title.nil?
+      =@faq.title.html_safe
+      %hr
+  %div
+    %h2.text-muted
+      Description
+    -unless @faq.description.nil?
+      =@faq.description.html_safe
+
+  -if admin_signed_in?
+    =link_to 'Edit', edit_faq_path(@faq.id), style: 'float:right'
+  %hr

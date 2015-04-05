@@ -2,9 +2,11 @@ Rails.application.routes.draw do
 
 	authenticate :admin do
 		resources :articles, only: [:new, :create, :edit, :update, :destroy]
+		resources :faqs, only: [:new, :create, :edit, :update, :destroy]
 	end
 
 	resources :articles, only: [:index, :show]
+	resources :faqs, only: [:index, :show]
 
 	devise_for :admin
 
@@ -17,7 +19,6 @@ Rails.application.routes.draw do
 	root 'home#home'
 
 	get 'plans-and-pricing', to: 'plans_pricing#index'
-	get 'faqs', to: 'faq#index'
 	get 'contact', to: 'contact#index'
 	get 'sign-up', to: 'sign_up#index'
 	#get 'admin', to: 'admin#index'

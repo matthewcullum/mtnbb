@@ -1,0 +1,13 @@
+.col-md-8.col-md-offset-2
+  -if @faqs.nil?
+    %h1
+      There's nothing here yet...
+  -else
+    -@faqs.each do |faq|
+      %h3
+        -unless faq.title.nil?
+          =link_to faq.title.capitalize, faq_path(faq.id)
+      %p
+        -unless faq.description.nil?
+          =Nokogiri::HTML.parse(truncate((@markdown.render(faq.description)), length: 120, escape: false)).inner_html.html_safe
+  =will_paginate @faqs

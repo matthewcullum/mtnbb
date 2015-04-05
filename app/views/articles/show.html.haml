@@ -1,5 +1,11 @@
-.col-md-6.col-md-offset-3
-  %h1= @article.title
-  %div= @article.body.html_safe
+.col-md-10.col-md-offset-3
+  %h1
+    %h2 Title:
+    -unless @article.title.nil?
+      =@article.title
+  %div
+    %h2 Body:
+    -unless @article.body.nil?
+      =@article.body.html_safe
   -if admin_signed_in?
     =link_to 'Edit', edit_article_path(@article.id), style: 'float:right'

@@ -4,6 +4,10 @@
       There's nothing here yet...
   -else
     -@articles.each do |article|
-      %h3= link_to article.title.capitalize, article_path(article.id)
-      %p= truncate article.body, length: 100
+      %h3
+        -unless article.title.nil?
+          =link_to article.title.capitalize, article_path(article.id)
+      %p
+        -unless article.body.nil?
+          =Nokogiri::HTML.parse(truncate((@markdown.render(article.body)), length: 120, escape: false)).inner_html.html_safe
   =will_paginate @articles

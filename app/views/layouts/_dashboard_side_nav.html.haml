@@ -1,17 +1,34 @@
 .side-nav
   %h2
     Articles
+    %br
     %small
+      = link_to new_article_path do
+        %span.glyphicon.glyphicon-plus
+        New
       %br
-      = link_to 'New', new_article_path
-      %br
-      = link_to 'View all', articles_path
-
-  %h2= link_to 'Plans and Pricing', ''
-  %h2= link_to 'FAQs', ''
+      = link_to articles_path do
+        %span.glyphicon.glyphicon-edit
+        View All
   %hr
   %h2
-    Links
-  %h3= link_to 'View Site', '/'
-  %h3= link_to 'Logout', destroy_admin_session_path, method: :delete
+    FAQs
+    %br
+    %small
+      = link_to new_faq_path do
+        %span.glyphicon.glyphicon-plus
+        New
+      %br
+      = link_to faqs_path do
+        %span.glyphicon.glyphicon-edit
+        View All
+  %hr
+  %h4
+    =link_to '/' do
+      %span.glyphicon.glyphicon-arrow-left
+      Back to site
+  %h4
+    =link_to destroy_admin_session_path, method: :delete do
+      %span.glyphicon.glyphicon-log-out
+      Logout
 

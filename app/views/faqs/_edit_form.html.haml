@@ -1,0 +1,6 @@
+=bootstrap_form_for @faq do |f|
+  -#=f.check_box :published
+  =f.text_field :title
+  =f.text_area :description, class: 'markup', id: 'body-textarea', hide_label: true, resizable: true
+
+  =f.submit 'Save', name: :save, class: 'btn btn-primary'
