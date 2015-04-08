@@ -7,7 +7,9 @@ gem 'rails_12factor'
 gem 'unicorn'
 
 #ui related
+gem 'rails', '4.2.0'
 gem 'jquery-ui-rails'
+gem 'gmaps-autocomplete-rails'
 gem 'bootstrap-sass'
 gem 'jquery-ui-themes'
 gem 'bootstrap_form', github: 'bootstrap-ruby/rails-bootstrap-forms'
@@ -29,7 +31,6 @@ gem 'devise'
 gem 'haml-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg'
 # Use SCSS for stylesheets

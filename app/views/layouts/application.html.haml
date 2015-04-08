@@ -4,6 +4,7 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title Mountain BroadBand - High-speed internet for rural Colorado
     %link{rel: "icon", href: "favicon.ico", type:"image/x-icon"}/
+    %script(type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false")
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
@@ -26,12 +27,12 @@
               Billing login
               %span.glyphicon.glyphicon-log-in
           %ul#mainNav.nav.navbar-nav
-            %li= link_to 'Sign up', 'sign-up'
+            %li= link_to 'Request Internet', 'request-internet'
             %li= link_to 'Plans and Pricing', 'plans-and-pricing'
             %li= link_to 'FAQ', 'faqs'
             %li= link_to 'News', articles_path
             %li= link_to 'Contact Us', 'contact'
-      #content.container-fluid
+      #content.container
         = yield
     .footer-container
       #footer.navbar.navbar-inverse

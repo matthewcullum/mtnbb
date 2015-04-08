@@ -1,0 +1,43 @@
+.col-md-8
+  %br
+  = bootstrap_form_for @internet_request, url: '' do |f|
+    .col-md-12
+      %h1 Request Internet
+    .col-md-12
+    .col-md-6
+      = f.text_field :first_name, placeholder: 'First Name', layout: :inline
+    .col-md-6
+      = f.text_field :last_name, placeholder: 'Last Name', layout: :inline
+    .col-md-12
+      = f.text_field :email, placeholder: 'john_doe@gmail.com'
+    .col-md-12
+      = f.text_field :phone_number, placeholder: '123-456-7890'
+    .col-md-12
+      = f.text_field :address, placeholder: 'start typing an address...', id: 'gmaps-input-address'
+    .col-md-12
+      = f.form_group :skill_level, label: {text: "Plan"}, help: "By clicking the <span class='btn btn-xs btn-default'>Submit Request</span> button, you agree to our #{link_to 'Terms and Conditions', '/terms-and-conditions'}.".html_safe do
+        = f.radio_button :plan, 0, label: "1.5Mpbs - $39/mo", checked: params[:plan] == '1.5'
+        = f.radio_button :plan, 1, label: "5Mpbs - $49/mo"
+        = f.radio_button :plan, 2, label: "10Mpbs - $59/mo"
+        = f.radio_button :plan, 3, label: "15Mpbs - $69/mo"
+    .col-md-12
+      = f.submit 'Submit Request'
+  != '&nbsp'
+.col-md-4
+  %h2 Installation
+  %p There is a one time installation/connection fee of $79.00. Payments can be made by mail or on our website.
+  %h2 Commercial Prices
+  %p Faster speeds are available on a per request basis. Please call&nbsp;303-642-3858&nbsp;to get a quote for your particular needs.
+  %h2 Coverage Area
+  %p Our coverage area is as follows:
+  %ul
+    %li
+      %span> Gilpin County
+      \&nbsp;&ndash; Dory Lakes, Rollinsville and surrounding areas.
+    %li
+      %span> Boulder County
+      \&nbsp;&ndash; Nederland, Eldora, Sugarloaf and from the eastern portion of Ridge Road to Boulder.
+    %li
+      %span> Jefferson County
+      \&nbsp;&ndash; Coal Creek Canyon, Golden Gate Canyon, Conifer, and parts of Evergreen.
+  %p We will do our best to get you service or make it available to you at the least possible cost.

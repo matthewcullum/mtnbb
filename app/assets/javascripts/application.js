@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require jquery-ui
+//= require gmaps-auto-complete
 //= require bootstrap
 //= require bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min
 //= require turbolinks

@@ -20,9 +20,11 @@ Rails.application.routes.draw do
 
 	get 'plans-and-pricing', to: 'plans_pricing#index'
 	get 'contact', to: 'contact#index'
-	get 'sign-up', to: 'sign_up#index'
+	post 'request-internet', to: 'request_internet#send_message'
+	get 'request-internet', to: 'request_internet#index'
 	#get 'admin', to: 'admin#index'
 	post 'contact', to: 'contact#send_message'
+	get 'terms-and-conditions', to: 'static'
 
 	# The priority is based upon order of creation: first created -> highest priority.
 	# See how all your routes lay out with "rake routes".

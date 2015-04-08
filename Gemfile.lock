@@ -108,6 +108,8 @@ GEM
     formatador (0.2.5)
     globalid (0.3.3)
       activesupport (>= 4.1.0)
+    gmaps-autocomplete-rails (0.1.4)
+      rails (>= 3.1.0)
     guard (2.12.3)
       formatador (>= 0.2.4)
       listen (~> 2.7)
@@ -309,6 +311,7 @@ DEPENDENCIES
   factory_girl_rails
   faker
   foreman
+  gmaps-autocomplete-rails
   guard-livereload
   haml-rails
   jbuilder (~> 2.0)
